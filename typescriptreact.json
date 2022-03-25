@@ -1,0 +1,29 @@
+{
+	// Place your snippets for typescriptreact here. Each snippet is defined under a snippet name and has a prefix, body and 
+	// description. The prefix is what is used to trigger the snippet and the body will be expanded and inserted. Possible variables are:
+	// $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders. Placeholders with the 
+	// same ids are connected.
+	// Example:
+	// "Print to console": {
+	// 	"prefix": "log",
+	// 	"body": [
+	// 		"console.log('$1');",
+	// 		"$2"
+	// 	],
+	// 	"description": "Log output to console"
+	// }
+	"Typescript React Functional Component": {
+		"prefix": "rtpfc",
+		"body": [
+			"import React from 'react';\n\ninterface Props {\n\t${2:}\n}\n\nfunction ${1:${TM_FILENAME_BASE}}(${3:props}: Props): JSX.Element {\n\treturn (\n\t\t<div>${4:}</div>\n\t);\n};\n\nexport default ${1:${TM_FILENAME_BASE}};"
+		],
+		"description": "Typescript React Functional Component"
+	},
+	"Typescript React Propless Functional Component": {
+		"prefix": "rtfc",
+		"body": [
+			"import React from 'react';\n\nfunction ${1:${TM_FILENAME_BASE}}(): JSX.Element {\n\treturn (\n\t\t<div>${2:}</div>\n\t);\n};\n\nexport default ${1:${TM_FILENAME_BASE}};"
+		],
+		"description": "Typescript React Functional Component"
+	}
+}
